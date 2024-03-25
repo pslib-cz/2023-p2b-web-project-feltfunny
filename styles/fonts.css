@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Skaut-Bold";
+    src: url(../fonts/SKAUT-Bold.otf);
+}
+@font-face {
+    font-family: "TheMix-Bold";
+    src: url(../fonts/TheMixC5-7_Bold.otf);
+}
+@font-face {
+    font-family: "TheMix-SemiLight";
+    src: url(../fonts/TheMixC5-4_SemiLight.otf);
+}
+@font-face {
+    font-family: "TheMix-SemiLightItallic";
+    src: url(../fonts/TheMixC5-4iSemiLightIta.otf);
+}
+@font-face {
+    font-family: "TheMix-BoldItallic";
+    src: url(../fonts/TheMixC5-7iBoldItalic.otf);
+}
