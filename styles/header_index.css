@@ -68,7 +68,9 @@ nav ul ul li {
 	display:list-item;
 	position: relative;
 }
-
+.filler{
+    width: calc(100% - 710px); /*není ideální řešení, ale funguje*/
+}
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
 	position: relative;
