@@ -1,26 +1,16 @@
-/* funguje do 730 px DESKOP only */
-h1 {
-    font-family: "Skaut-Bold";
-    font-size: 1.25em;
-	text-align: center;
-	color: #8BA8C2;
-    margin: 0;
-    padding: 0;
-}	
-h2 {
-    font-family: "TheMix-Bold";
-    font-size: 0.5em;
-    text-align: center;
-    color: #8BA8C2;
-    margin: 0;
-    padding: 0;
+body{
+    margin: 0px;
 }
 a {
-    font-family: "TheMix-Bold";
+    font-family: "TheMix-SemiLight";
+    font-size: 0.4em;
 	color: #8BA8C2;
+    border: #304163 solid 0.0000001px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 nav {
-    border: #304163 solid 1px;
+    border: #22314d solid 1px;
     border-radius: 10px;
 	background-color: #304163;
 }
@@ -41,7 +31,7 @@ nav a {
 	padding:0 10px;	
 	color:#FFF;
 	font-size:20px;
-	line-height: 60px;
+    line-height: 30px;
 	text-decoration:none;
 }
 
@@ -53,12 +43,16 @@ nav a:hover {
 nav ul ul {
 	display: none;
 	position: absolute; 
-	top: 60px; /* the height of the main nav */
+	top: 55px; /* the height of the main nav */
+    border: #22314d solid 2px;
+    border-radius:10px ;
+    overflow: hidden;
 }
 	
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
+    background-color: #304163;
 }
 	
 /* Fisrt Tier Dropdown */
@@ -69,7 +63,7 @@ nav ul ul li {
 	position: relative;
 }
 .filler{
-    width: calc(100% - 710px); /*není ideální řešení, ale funguje*/
+    width: calc(100% - 720px); /*není ideální řešení, ale funguje*/
 }
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
@@ -90,20 +84,44 @@ a[href="index.html"]{
     flex-direction: row;
 }
 .text-u-loga{
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 50%;
 }
-.text-u-loga > h1{
+.flotila-liberec{
     display: flex;
     align-items: baseline;
-    margin: 0 0 -35px 0;
+    padding-top: 5px;
+    font-family: "Skaut-Bold";
+    font-size: 1.25em;
+	text-align: center;
+	color: #8BA8C2;
+    margin-bottom:5px;
+    padding: 0;
 }
-.text-u-loga > h2{
+.title-of-site{
     display: flex;
     align-items: baseline;
+    font-family: "TheMix-Bold";
+    font-size: 0.5em;
+    text-align: center;
+    color: #8BA8C2;
+    margin-top:-10px ;
+    padding: 0;
 }
 nav > ul{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+a[href="index.html"]:hover{
+    background-color: #304163;
+}
+/*header*/
+header{
+    height: 600px;
+    padding: 6px;
+    background-image: url(../img/header_img_index.jpg);
+    background-size: cover;
 }
