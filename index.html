@@ -8,6 +8,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flotila Liberec</title>
+    <script src="JavaScript/script.js"></script>
   </head>
 
   <body>
@@ -26,16 +27,7 @@
             </a>
           </li>
           <div>
-            <div
-              role="button"
-              aria-label="hamburger button"
-              class="hamburger hamburger--button"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <menu>
+            <menu class="menu-toggle is-active">
               <li>
                 <a href="#">Přístav</a>
                 <!-- First Tier Drop Down -->
@@ -58,6 +50,11 @@
               <li><a href="#">Kontakty</a></li>
               <li><a href="#" class="icon-user login"></a></li>
             </menu>
+            <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
           </div>
         </ul>
       </nav>

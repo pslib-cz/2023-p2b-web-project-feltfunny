@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 0p
 }
 
 nav a {
@@ -69,10 +69,6 @@ nav ul ul li {
     position: relative;
 }
 
-.filler {
-    width: calc(100% - 720px);
-    /*není ideální řešení, ale funguje*/
-}
 
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
@@ -176,34 +172,78 @@ header h3 {
 }
 
 /*hamburger*/
-.checkbox {
-    display: none;
-}
-
-.hamburger {
-    --line: 8px;
-    width: 40px;
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-direction: column;
-    gap: var(--line);
-}
-
-.hamburger span {
-    height: var(--line);
-    width: 100%;
-    background: #000;
-    border-radius: calc(var(--line) / 2);
-    transform-origin: right center;
-    transition: transform .3s, opacity 0.2s .9s,
-        translate .4s .4s;
-}
 
 .hamburger {
     display: none;
+    cursor: pointer;
 }
 @media (max-width: 790px) {
-    menu{
+    .checkbox {
         display: none;
+    }
+    .hamburger {
+        --line: 8px;
+        width: 40px;
+        aspect-ratio: 1/1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--line);
+    }
+    .hamburger span {
+        height: var(--line);
+        width: 100%;
+        background: #000;
+        border-radius: calc(var(--line) / 2);
+        transform-origin: right center;
+        transition: transform .3s, opacity 0.2s .9s, 
+                    translate .4s .4s;
+    }
+
+    .hamburger[class$=active] span:nth-of-type(1) {
+        transform: translateY(calc(30px))
+                   rotate(45deg);
+    }
+
+    .hamburger[class$=active] span:nth-of-type(2) {
+       transition: opacity 0.2s;
+       opacity: 0;
+    }
+
+    .hamburger[class$=active] span:nth-of-type(3) {
+        transform: translateY(-30px)
+                   rotate(-45deg);
+    }
+
+    .navbar {
+        position: relative;
+    }
+    menu {
+        background-color: #304163;
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        border: #22314d solid 1px;
+        border-radius: 10px;
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        transition: left 2.5s;
+    }
+    menu[class$=active] {
+        left: -110%;
+    }
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left:100px;
+        /* the height of the main nav */
+        border: #22314d solid 2px;
+        border-radius: 10px;
+        overflow: hidden;
     }
 }

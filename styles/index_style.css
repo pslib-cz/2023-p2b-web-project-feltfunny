@@ -1,4 +1,4 @@
-body{
+html{
     margin: 0px;
     font-family: "TheMix-SemiLight";
     background-color: #D9D9D9;
@@ -35,7 +35,7 @@ section{
     margin-bottom: 20px;
     padding: 20px;
     text-align: start;
-    width :320px;
+    width :360px;
     height: 200px;
     background-image: url(../img/SKAUT_tvary_6.svg);
     background-size: fill;
@@ -95,7 +95,6 @@ article section span{
     margin-left: 35px;
     display: flex;
     flex-direction: row;
-    width: 720px;
 }
 iframe{
     margin-left: auto;
@@ -171,6 +170,7 @@ footer h5{
     .nabor{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
     footer{
         display: grid;
@@ -181,5 +181,23 @@ footer h5{
     section{
         position: relative;
         left: -10%;
+    }
+    section span{
+        width: 50px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: start;
+        width :320px;
+        height: 200px;
+        background-image: url(../img/SKAUT_tvary_6.svg);
+        background-size: fill;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-clip: margin-box;
     }
 }
