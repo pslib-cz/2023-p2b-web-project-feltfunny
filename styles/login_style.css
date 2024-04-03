@@ -1,0 +1,28 @@
+html{
+    background-color:#22314d ;
+}
+body{
+    font-family: "TheMix-SemiLight";
+    margin: 0;
+    padding: 0;
+    background-color: #22314d;
+}
+.login-form{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    height: 30px;
+    border: 1px solid #22314d;
+    border-radius: 10px;
+    background: #f2f2f2;
+    font-size: large;
+    font-family: "TheMix-SemiLight";
+}

@@ -152,24 +152,7 @@ menu{
     margin: 0;
 }
 /*header pic*/
-header {
-    height: 750px;
-    padding: 6px;
-    background-image: url(../img/header_img_index.jpg);
-    background-size: cover;
-    background-position: left bottom;
-    object-fit: contain;
-}
 
-/*header pic*/
-header h3 {
-    font-family: "Skaut-Bold";
-    color: white;
-    position: absolute;
-    font-size: 3em;
-    top: 600px;
-    right: 3%;
-}
 
 /*hamburger*/
 

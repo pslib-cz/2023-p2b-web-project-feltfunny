@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/header_index.css" />
+    <link rel="stylesheet" href="styles/login_style.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
+    />
+    <title>Flotila Liberec | Login</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <div class="logo">
+                <img src="img/logo.png" alt="logo flotily liberec" />
+              </div>
+              <div class="text-u-loga">
+                <h1 class="flotila-liberec">Flotila Liberec</h1>
+                <h2 class="title-of-site">7. přístav vodních skautů</h2>
+              </div>
+            </a>
+          </li>
+          <div>
+            <menu class="menu-toggle is-active">
+              <li>
+                <a href="#">Přístav</a>
+                <!-- First Tier Drop Down -->
+                <ul>
+                  <li><a href="#">O nás</a></li>
+                  <li><a href="#">Historie</a></li>
+                  <li><a href="#">Klubovny</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Oddíly</a>
+                <!-- First Tier Drop Down -->
+                <ul>
+                  <li><a href="#">33. smečka vlčat</a></li>
+                  <li><a href="#">30.oddíl vodních skautů</a></li>
+                  <li><a href="#">30.roverský kmen</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Galerie</a></li>
+              <li><a href="#">Kontakty</a></li>
+              <li><a href="#" class="icon-user login"></a></li>
+            </menu>
+            <div
+              role="button"
+              aria-label="hamburger button"
+              class="hamburger hamburger--button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="login-form">
+            <h1>Přihlášení</h1>
+            <form action="login.php" method="post">
+            <div class="txtb">
+                <input type="text" name="username" required />
+                <span data-placeholder="Username"></span>
+            </div>
+            <div class="txtb">
+                <input type="password" name="password" required />
+                <span data-placeholder="Password"></span>
+            </div>
+            <input type="submit" class="logbtn" value="Login" />
+            <div class="bottom-text">
+                Nemáte účet => smůla
+            </div>
+            </form>
+        </div>
+    </main>
+  </body>
+</html>
