@@ -1,0 +1,112 @@
+article {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 790px;
+    padding: 20px;
+    padding: 10px;
+}
+article p{
+    font-size: 1em;
+    font-family: "TheMix-SemiLight";
+    color: #304163;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+article h4{
+    font-size: 2em;
+    font-family: "TheMix-Bold";
+    color: #304163;
+    margin: 0;
+    padding: 20px;
+   /* text-align: start; looks nice*/
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: start;
+    width :360px;
+    height: 200px;
+    background-image: url(../img/SKAUT_tvary_6.svg);
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: margin-box;
+}
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+article section .kontakt a{
+    font-size: 1em;
+    font-family: "TheMix-SemiLight";
+    color: #304163;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+article section .kontakt h6{
+    font-size: 1em;
+    font-family: "Skaut-Bold";
+    color: #304163;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+article section h5{
+    padding-left: 20px;
+    font-size: 2em;
+    font-family: "TheMix-Bold";
+    color: #304163;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+article section span{
+    position: relative;
+    top:-140px;
+    transform: rotate(-15deg);
+    left: 30px;
+    padding-left: 20px;
+    font-size: 8em;
+    font-family: "Skaut-Bold";
+    color: #304163;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+.nabor{
+    display: flex;
+    flex-direction: row;
+}
+iframe{
+    border: 1px solid #304163;
+    border-radius: 5px;
+}
+.mapa > .adresa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.mapa > .adresa> h5{
+    margin: 0;
+    font-family: "TheMix-Bold";
+    font-size: 1em;
+    color: #304163;
+}
+.mapa > .adresa> span{
+    margin: 0;
+    font-family: "TheMix-SemiLight";
+    font-size: 1em;
+    color: #304163;
+}
