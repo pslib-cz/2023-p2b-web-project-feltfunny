@@ -1,128 +1,162 @@
-body{
+body {
     margin: 0px;
 }
+
 nav a {
     font-family: "TheMix-SemiLight";
     font-size: 0.4em;
-	color: #8BA8C2;
+    color: #8BA8C2;
     border: #304163 solid 0.0000001px;
     border-radius: 10px;
     overflow: hidden;
 }
+
 nav {
     border: #22314d solid 1px;
     border-radius: 10px;
-	background-color: #304163;
+    background-color: #304163;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-	padding-left: 5px;
+    padding-left: 5px;
     padding-right: 5px;
     margin: 0;
-	list-style: none;
-	position: relative;
-	}
-	
-nav ul li {
-	display:inline-block;
-	}
-
-nav a {
-	display:block;
-	padding:0 10px;	
-	color:#FFF;
-	font-size:20px;
-    line-height: 30px;
-	text-decoration:none;
+    list-style: none;
+    position: relative;
 }
 
-nav a:hover { 
-	background-color: #000000; 
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #000000;
 }
 
 /* Hide Dropdowns by Default */
 nav ul ul {
-	display: none;
-	position: absolute; 
-	top: 55px; /* the height of the main nav */
+    display: none;
+    position: absolute;
+    top: 55px;
+    /* the height of the main nav */
     border: #22314d solid 2px;
-    border-radius:10px ;
+    border-radius: 10px;
     overflow: hidden;
 }
-	
+
 /* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-	display:inherit;
+nav ul li:hover>ul {
+    display: inherit;
     background-color: #304163;
 }
-	
+
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
-	position: relative;
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
 }
-.filler{
-    width: calc(100% - 720px); /*není ideální řešení, ale funguje*/
+
+.filler {
+    width: calc(100% - 720px);
+    /*není ideální řešení, ale funguje*/
 }
+
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
-	position: relative;
-	top:-60px; 
-	left:170px;
+    position: relative;
+    top: -60px;
+    left: 170px;
 }
-nav img{
+
+nav img {
     position: relative;
     top: calc(50% - 25px);
     left: calc(50% - 25px);
     width: 50px;
     height: 50px;
 }
-a[href="index.html"]{
-    gap : 10px;
+
+a[href="index.html"] {
+    gap: 10px;
     display: flex;
     flex-direction: row;
 }
-.text-u-loga{
+
+.text-u-loga {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 50%;
 }
-.flotila-liberec{
+
+.flotila-liberec {
     display: flex;
     align-items: baseline;
     padding-top: 5px;
     font-family: "Skaut-Bold";
     font-size: 1.25em;
-	text-align: center;
-	color: #8BA8C2;
-    margin-bottom:5px;
+    text-align: center;
+    color: #8BA8C2;
+    margin-bottom: 5px;
     padding: 0;
 }
-.title-of-site{
+
+.title-of-site {
     display: flex;
     align-items: baseline;
     font-family: "TheMix-Bold";
     font-size: 0.5em;
     text-align: center;
     color: #8BA8C2;
-    margin-top:-10px ;
+    margin-top: -10px;
     padding: 0;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-a[href="index.html"]:hover{
+
+a[href="index.html"]:hover {
     background-color: #304163;
 }
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: #22314d 0px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #8BA8C2;
+    color: #22314d;
+}
+menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
 /*header pic*/
-header{
+header {
     height: 750px;
     padding: 6px;
     background-image: url(../img/header_img_index.jpg);
@@ -130,19 +164,22 @@ header{
     background-position: left bottom;
     object-fit: contain;
 }
+
 /*header pic*/
-header h3{
-    font-family:"Skaut-Bold";
+header h3 {
+    font-family: "Skaut-Bold";
     color: white;
     position: absolute;
     font-size: 3em;
-    top :600px;
+    top: 600px;
     right: 3%;
 }
+
 /*hamburger*/
 .checkbox {
     display: none;
 }
+
 .hamburger {
     --line: 8px;
     width: 40px;
@@ -151,15 +188,17 @@ header h3{
     flex-direction: column;
     gap: var(--line);
 }
+
 .hamburger span {
     height: var(--line);
     width: 100%;
     background: #000;
     border-radius: calc(var(--line) / 2);
     transform-origin: right center;
-    transition: transform .3s, opacity 0.2s .9s, 
-                translate .4s .4s;
+    transition: transform .3s, opacity 0.2s .9s,
+        translate .4s .4s;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }

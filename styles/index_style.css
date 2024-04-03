@@ -1,3 +1,8 @@
+body{
+    margin: 0px;
+    font-family: "TheMix-SemiLight";
+    background-color: #D9D9D9;
+}
 article {
     text-align: center;
     margin: 0 auto;
