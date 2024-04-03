@@ -90,6 +90,8 @@ article section span{
 iframe{
     border: 1px solid #304163;
     border-radius: 5px;
+    width:790px;
+    height:500px;
 }
 .mapa > .adresa{
     display: flex;
@@ -109,4 +111,40 @@ iframe{
     font-family: "TheMix-SemiLight";
     font-size: 1em;
     color: #304163;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 300px 300px;
+    background-color: #304163;
+}
+.sponsors-loga{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    justify-self: center;
+    align-self: center;
+    gap: 20px;
+    overflow: hidden;
+}
+.sponsors-loga img{
+    width: 140px;
+}
+.junak img{
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer p{
+    font-size: 1em;
+    font-family: "TheMix-SemiLight";
+    color: #8BA8C2;
+    margin: 5px;
+    padding: 0;
+}
+footer h5{
+    font-size: 1em;
+    font-family: "TheMix-Bold";
+    color: #8BA8C2;
+    margin: 5px;
+    padding: 0;
 }
