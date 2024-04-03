@@ -5,12 +5,14 @@ body{
 }
 article {
     text-align: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 790px;
-    padding: 20px;
-    padding: 10px;
+
 }
 article p{
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1em;
     font-family: "TheMix-SemiLight";
     color: #304163;
@@ -31,9 +33,9 @@ section{
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
-    padding: 30px;
+    padding: 20px;
     text-align: start;
-    width :360px;
+    width :320px;
     height: 200px;
     background-image: url(../img/SKAUT_tvary_6.svg);
     background-size: fill;
@@ -89,13 +91,18 @@ article section span{
     text-align: start;
 }
 .nabor{
+    margin-right: auto;
+    margin-left: 35px;
     display: flex;
     flex-direction: row;
+    width: 720px;
 }
 iframe{
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #304163;
     border-radius: 5px;
-    width:790px;
+    width:740px;
     height:500px;
 }
 .mapa > .adresa{
@@ -152,4 +159,27 @@ footer h5{
     color: #8BA8C2;
     margin: 5px;
     padding: 0;
+}
+@media (max-width: 790px) {
+    iframe{
+        width:300px;
+        height:auto;
+    }
+    article{
+        max-width: 300px;
+    }
+    .nabor{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 300px 300px;
+        background-color: #304163;
+    }
+    section{
+        position: relative;
+        left: -10%;
+    }
 }
