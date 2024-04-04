@@ -230,4 +230,50 @@ menu{
         border-radius: 10px;
         overflow: hidden;
     }
+    .flotila-liberec {
+        display: flex;
+        align-items: baseline;
+        padding-top: 5px;
+        font-family: "Skaut-Bold";
+        font-size: 1.15em;
+        text-align: center;
+        color: #8BA8C2;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    
+    .title-of-site {
+        display: flex;
+        align-items: baseline;
+        font-family: "TheMix-Bold";
+        font-size: 0.4em;
+        text-align: center;
+        color: #8BA8C2;
+        margin-top: -10px;
+        padding: 0;
+    }
+}
+@media(max-width: 350px){
+    .flotila-liberec {
+        display: flex;
+        align-items: baseline;
+        padding-top: 5px;
+        font-family: "Skaut-Bold";
+        font-size: 0.8em;
+        text-align: center;
+        color: #8BA8C2;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    
+    .title-of-site {
+        display: flex;
+        align-items: baseline;
+        font-family: "TheMix-Bold";
+        font-size: 0.3em;
+        text-align: center;
+        color: #8BA8C2;
+        margin-top: -10px;
+        padding: 0;
+    }
 }
