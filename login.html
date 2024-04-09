@@ -22,7 +22,11 @@
           <li>
             <a href="index.html">
               <div class="logo">
-                <img src="img/logo.png" alt="logo flotily liberec" />
+                <picture>
+                  <source type="image/avif" srcset="img/logo.avif">
+                  <source type="image/webp" srcset="img/logo.webp">
+                  <img src="img/logo.png" alt="logo flotily liberec" />
+                </picture>
               </div>
               <div class="text-u-loga">
                 <h1 class="flotila-liberec">Flotila Liberec</h1>
@@ -30,41 +34,35 @@
               </div>
             </a>
           </li>
-          <div>
-            <menu class="menu-toggle is-active">
-              <li>
-                <a href="#">Přístav</a>
-                <!-- First Tier Drop Down -->
-                <ul>
-                  <li><a href="#">O nás</a></li>
-                  <li><a href="#">Historie</a></li>
-                  <li><a href="#">Klubovny</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Oddíly</a>
-                <!-- First Tier Drop Down -->
-                <ul>
-                  <li><a href="#">33. smečka vlčat</a></li>
-                  <li><a href="#">30.oddíl vodních skautů</a></li>
-                  <li><a href="#">30.roverský kmen</a></li>
-                </ul>
-              </li>
-              <li><a href="gallery.html">Galerie</a></li>
-              <li><a href="#">Kontakty</a></li>
-              <li><a href="login.html" class="icon-user login"></a></li>
-            </menu>
-            <div
-              role="button"
-              aria-label="hamburger button"
-              class="hamburger hamburger--button"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
         </ul>
+        <ul class="menu-toggle is-active menu">
+          <li>
+            <a href="#">Přístav</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="#">O nás</a></li>
+              <li><a href="#">Historie</a></li>
+              <li><a href="#">Klubovny</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Oddíly</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="#">33. smečka vlčat</a></li>
+              <li><a href="#">30.oddíl vodních skautů</a></li>
+              <li><a href="#">30.roverský kmen</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="#">Kontakty</a></li>
+          <li><a href="login.html" class="icon-user login"></a></li>
+        </ul>
+        <div aria-label="hamburger button" class="hamburger hamburger--button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </header>
     <main>
@@ -96,15 +94,35 @@
       <div class="sponsors">
         <h5>Děkujeme za podporu</h5>
         <div class="sponsors-loga">
-          <img src="img/Logo LK (png).png" alt="logo libereckého kraje" />
-          <img src="img/logo-skaut-liberec.png" alt="logo libereckého svazu skautů" />
-          <img src="img/1200px-Liberec_Logo.png" alt="logo liberce" />
-          <img src="img/kudyznudy.png" alt="logo kudyznudy.cz" />
+          <picture>
+            <source type="image/avif" srcset="img/Logo_LK_(png).avif">
+            <source type="image/webp" srcset="img/Logo_LK_(png).webp">
+            <img src="img/Liberecký_kraj_logo.png" alt="Logo libereckého kraje" />
+          </picture>
+          <picture>
+            <source type="image/avif" srcset="img/logo-skaut-liberec.avif">
+            <source type="image/webp" srcset="img/logo-skaut-liberec.webp">
+            <img src="img/logo-skaut-liberec.jpg" alt="logo libereckého svazu skautů" />
+          </picture>
+          <picture>
+            <source type="image/avif" srcset="img/1200px-Liberec_Logo.avif">
+            <source type="image/webp" srcset="img/1200px-Liberec_Logo.webp">
+            <img src="img/1200px-Liberec_Logo.png" alt="logo liberce" />
+          </picture>
+          <picture>
+            <source type="image/avif" srcset="img/kudyznudy.avif">
+            <source type="image/webp" srcset="img/kudyznudy.webp">
+            <img src="img/kudyznudy.png" alt="logo kudyznudy.cz" />
+          </picture>
         </div>
       </div>
       <div class="junak">
         <h5>Jsme členem Junáka</h5>
-        <img src="img/junak.png" alt="logo junáka" />
+        <picture>
+          <source type="image/avif" srcset="img/junak.avif">
+          <source type="image/webp" srcset="img/junak.webp">
+          <img src="img/junak.png" alt="logo junáka" />
+        </picture>
       </div>
     </footer>
   </body>
