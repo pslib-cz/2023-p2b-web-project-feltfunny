@@ -258,7 +258,7 @@ a[href="index.html"]:hover {
         padding: 0;
     }
 }
-@media(max-width: 350px){
+@media(max-width: 380px){
     .flotila-liberec {
         display: flex;
         align-items: baseline;
